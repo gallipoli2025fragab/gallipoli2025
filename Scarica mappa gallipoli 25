@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b44a1cfc8981601dbf7478905e4ae950 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b44a1cfc8981601dbf7478905e4ae950" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b44a1cfc8981601dbf7478905e4ae950 = L.map(
+                "map_b44a1cfc8981601dbf7478905e4ae950",
+                {
+                    center: [40.054374, 17.996482],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e4c200a29f852d50dd401803fe0f1db2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b44a1cfc8981601dbf7478905e4ae950);
+        
+    
+            var marker_cluster_db01fd165f763ce819bc7a77c8449bfc = L.markerClusterGroup(
+                {}
+            );
+            map_b44a1cfc8981601dbf7478905e4ae950.addLayer(marker_cluster_db01fd165f763ce819bc7a77c8449bfc);
+        
+    
+            var marker_865ca13ccba49acaa5c997936ec4a194 = L.marker(
+                [40.03988, 18.0085],
+                {}
+            ).addTo(marker_cluster_db01fd165f763ce819bc7a77c8449bfc);
+        
+    
+            var icon_ad9fea740ab4637ca3d2111d97d36852 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_865ca13ccba49acaa5c997936ec4a194.setIcon(icon_ad9fea740ab4637ca3d2111d97d36852);
+        
+    
+        var popup_ff63cbba63d71049bae2b970b1c9944d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1af0c04f1f9d32fe909cd1570ec5780a = $(`<div id="html_1af0c04f1f9d32fe909cd1570ec5780a" style="width: 100.0%; height: 100.0%;">Praja<br>Club (Reggaeton, Pop, Trap)<br><b>Orari:</b> 23:30 – 05:00<br><b>Parcheggio:</b> Via delle Robinie / Mimose – gratuito</div>`)[0];
+            popup_ff63cbba63d71049bae2b970b1c9944d.setContent(html_1af0c04f1f9d32fe909cd1570ec5780a);
+        
+
+        marker_865ca13ccba49acaa5c997936ec4a194.bindPopup(popup_ff63cbba63d71049bae2b970b1c9944d)
+        ;
+
+        
+    
+    
+            marker_865ca13ccba49acaa5c997936ec4a194.bindTooltip(
+                `<div>
+                     Praja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c0eb71695bee9c604ca87bce3553260f = L.marker(
+                [40.052224, 17.999289],
+                {}
+            ).addTo(marker_cluster_db01fd165f763ce819bc7a77c8449bfc);
+        
+    
+            var icon_cf6499ba7dc8bc33c8c36d8b58033040 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c0eb71695bee9c604ca87bce3553260f.setIcon(icon_cf6499ba7dc8bc33c8c36d8b58033040);
+        
+    
+        var popup_369096676a3d6a40263478ed02066995 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4839b736323d283a717f485f0b73dff = $(`<div id="html_e4839b736323d283a717f485f0b73dff" style="width: 100.0%; height: 100.0%;">Parco Gondar<br>Club (Pop, Urban, Latino)<br><b>Orari:</b> 22:00 – 04:00<br><b>Parcheggio:</b> Via Savonarola / Volta – gratuito</div>`)[0];
+            popup_369096676a3d6a40263478ed02066995.setContent(html_e4839b736323d283a717f485f0b73dff);
+        
+
+        marker_c0eb71695bee9c604ca87bce3553260f.bindPopup(popup_369096676a3d6a40263478ed02066995)
+        ;
+
+        
+    
+    
+            marker_c0eb71695bee9c604ca87bce3553260f.bindTooltip(
+                `<div>
+                     Parco Gondar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b06c7e4721d7977085b90d47e2c8aef3 = L.marker(
+                [40.059048, 18.04252],
+                {}
+            ).addTo(marker_cluster_db01fd165f763ce819bc7a77c8449bfc);
+        
+    
+            var icon_4e80f78603b9b1302e5d219f4fb54747 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b06c7e4721d7977085b90d47e2c8aef3.setIcon(icon_4e80f78603b9b1302e5d219f4fb54747);
+        
+    
+        var popup_7a73ea4ddaedb351a258604112b7ae11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd2ec195a000328a2efcc14f9dc1d9e5 = $(`<div id="html_bd2ec195a000328a2efcc14f9dc1d9e5" style="width: 100.0%; height: 100.0%;">Riobo<br>Afterclub (Reggaeton, Latino)<br><b>Orari:</b> 05:00 – 09:00<br><b>Parcheggio:</b> Parcheggio interno – gratis se entro 05:30</div>`)[0];
+            popup_7a73ea4ddaedb351a258604112b7ae11.setContent(html_bd2ec195a000328a2efcc14f9dc1d9e5);
+        
+
+        marker_b06c7e4721d7977085b90d47e2c8aef3.bindPopup(popup_7a73ea4ddaedb351a258604112b7ae11)
+        ;
+
+        
+    
+    
+            marker_b06c7e4721d7977085b90d47e2c8aef3.bindTooltip(
+                `<div>
+                     Riobo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_484e8057ed8960bc8cdccaddee1ac69c = L.marker(
+                [40.040593, 18.008167],
+                {}
+            ).addTo(marker_cluster_db01fd165f763ce819bc7a77c8449bfc);
+        
+    
+            var icon_4889e8714e6ac716869febe69d37fce7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_484e8057ed8960bc8cdccaddee1ac69c.setIcon(icon_4889e8714e6ac716869febe69d37fce7);
+        
+    
+        var popup_ecb02e55803cabb89bb06a332a0f9abb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d1852ffd742e2964f35acbcf5a76a166 = $(`<div id="html_d1852ffd742e2964f35acbcf5a76a166" style="width: 100.0%; height: 100.0%;">Zen Beach<br>Beach Party (Reggaeton)<br><b>Orari:</b> 15:00 – 20:00<br><b>Parcheggio:</b> Via del Gabbiano – gratuito</div>`)[0];
+            popup_ecb02e55803cabb89bb06a332a0f9abb.setContent(html_d1852ffd742e2964f35acbcf5a76a166);
+        
+
+        marker_484e8057ed8960bc8cdccaddee1ac69c.bindPopup(popup_ecb02e55803cabb89bb06a332a0f9abb)
+        ;
+
+        
+    
+    
+            marker_484e8057ed8960bc8cdccaddee1ac69c.bindTooltip(
+                `<div>
+                     Zen Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a300d6f4b453c11fea6643dc3aaf597 = L.marker(
+                [40.051855, 17.995905],
+                {}
+            ).addTo(marker_cluster_db01fd165f763ce819bc7a77c8449bfc);
+        
+    
+            var icon_96726dbad14e5f78a282e6082507271c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9a300d6f4b453c11fea6643dc3aaf597.setIcon(icon_96726dbad14e5f78a282e6082507271c);
+        
+    
+        var popup_94b794728cb7b92e2b87264d36b1c32a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0aacd97608e3671dc6cef0183a149eed = $(`<div id="html_0aacd97608e3671dc6cef0183a149eed" style="width: 100.0%; height: 100.0%;">Kabana Club / After<br>Sunset & After (Latin/Afro)<br><b>Orari:</b> 05:30 – 09:30<br><b>Parcheggio:</b> Lungomare Galilei – gratuito</div>`)[0];
+            popup_94b794728cb7b92e2b87264d36b1c32a.setContent(html_0aacd97608e3671dc6cef0183a149eed);
+        
+
+        marker_9a300d6f4b453c11fea6643dc3aaf597.bindPopup(popup_94b794728cb7b92e2b87264d36b1c32a)
+        ;
+
+        
+    
+    
+            marker_9a300d6f4b453c11fea6643dc3aaf597.bindTooltip(
+                `<div>
+                     Kabana Club / After
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8bf68943b1cbf36f877eda4d481194d3 = L.marker(
+                [40.054374, 17.996482],
+                {}
+            ).addTo(map_b44a1cfc8981601dbf7478905e4ae950);
+        
+    
+            var icon_70f8b1c0c27bc04d2197d75dc4ed4077 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8bf68943b1cbf36f877eda4d481194d3.setIcon(icon_70f8b1c0c27bc04d2197d75dc4ed4077);
+        
+    
+            marker_8bf68943b1cbf36f877eda4d481194d3.bindTooltip(
+                `<div>
+                     Casa (Via Palermo 4)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
